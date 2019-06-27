@@ -21,8 +21,6 @@ public class Receiver extends BroadcastReceiver {
     }
 
     public void onReceive(Context context, Intent intent) {
-
-
         // ottengo un array di oggetti DataSensor da uno stream di byte
         DataSensor buffer[];
         buffer = (DataSensor[]) intent.getSerializableExtra("message");
